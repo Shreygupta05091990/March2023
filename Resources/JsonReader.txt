@@ -1,0 +1,45 @@
+	{
+        "Shrey":{
+        "name": "litteleHelpByKR-1",
+        "dob": "2020-05-23T",
+        "addressDetails": {
+            "houseNumber": "H-55",
+            "aadharNumber": 32345,
+            "addressLine1": "Mg Road-1",
+            "addressLine2": "12th Cross-1",
+            "landmark": "Near Airport Road",
+            "pin": 1,
+            "officeAddress": {
+                "buildingNumber": 3,
+                "addressLine1": "XYZ-1",
+                "addressLine2": "Airport Road",
+                "landMark": "Near U turn signal",
+                "cardId": "EMP-001",
+                "pin": 75943764
+            }
+        }
+		}
+		
+		"Shantanu":{
+        "name": "lShantanu Mahendara",
+        "dob": "2020-05-23T",
+        "addressDetails": {
+            "houseNumber": " Crosswood",
+            "aadharNumber": 8989,
+            "addressLine1": "Liverpool",
+            "addressLine2": "12th Cross-1",
+            "landmark": "Heathrow",
+            "pin": 1,
+            "officeAddress": {
+                "buildingNumber": 3,
+                "addressLine1": "XYZ-1",
+                "addressLine2": "Airport Road",
+                "landMark": "Near U turn signal",
+                "cardId": "EMP-001",
+                "pin": 9810983129	
+            }
+        }
+		}
+		
+		
+    }

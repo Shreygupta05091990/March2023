@@ -1,0 +1,9 @@
+{
+	"name":"Speakers",
+	"category":"JBL",
+	"specifications":{
+		"model":"SPeaker JBL model",
+		"color":"black",
+		"sound":"100 Decibels"
+		}
+}

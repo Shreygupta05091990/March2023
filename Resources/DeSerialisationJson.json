@@ -1,0 +1,24 @@
+{
+	"firstName": "Shrey",
+	"lastName": "Gupta",
+	"isAlive": true,
+	"age": 32,
+	"address": {
+		"streetAddress": "21 2nd Street",
+		"city": "Lakhimpur",
+		"state": "Uttar Pradesh",
+		"pinCode": "262-701"
+	},
+	"phoneNumbers": [
+		{
+			"type": "home",
+			"number": "05872-66362"
+		},
+		{
+			"type": "mobile",
+			"number": "7905278430"
+		}
+	]
+}
+
+
