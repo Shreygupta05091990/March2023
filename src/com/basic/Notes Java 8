@@ -1,0 +1,149 @@
+Java 8 Concepts :
+
+Those interfaces which are accepted  as functions:
+It makes  filtering from a collection quite easy  , with the help of Streams .
+
+A Collection is an in-memory data structure, which holds all the values that the data structure currently has. 
+Every element in the Collection has to be computed before it can be added to the Collection.
+whereas 
+Stream is a conceptually a pipeline, in which elements are computed on demand.
+
+
+
+Anonymous Inner Class :
+For the sake of providing method definiton to the interface method , we create a full new class.
+Then , we can avoid that approach , will use  Anonymous Innner  class 
+
+If the only purpose of creating a class is just  to override the method  from an interface and not to reuse across different places .
+Lambda expressions help define Functional interface with relatively less lines of code. 
+
+
+
+
+
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••	   	   
+• Differences between  an  Interface and Fucntional Interface 
+	1. If an interface contains only one abstract method and  any number of default and static methods .Then it can be used as 
+	   Functional Interface .
+	2. We Cannot use Lambda Expression , if there is more than 1 abstract method in an INterface(or the interface is not an Fucntional Interface
+	3. A normal interface can have any number of abstract methods.
+	4. Default methods may or  maynot  be overirdden by susbsequent implementation class.
+	5. Static methods  are just like those mehtods , which we write in utility classes . 
+	   Rather than creating a new class for it . we can create a static methods in functional interfaces. SO that they can be used in subsequent 
+	   implementations.
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••	   	   
+Functional Interfaces introduced in JAVA 8 :
+		• Function 
+					 R apply(T t): --> Represents a function that accepts one argument and produces a result.
+									T-->input to the function
+									R-->type of result to the fucntion 
+		• Consumer   
+					void accept(T t):-->  Represents a function that accepts one argument .
+					forEach(consumer)
+		
+		• Predicate
+					boolean test(T t)-->just evaluates a test and returns boolean .
+		• Supplier
+					          T get()-->returns  a string if nothing is supplied           
+	   
+	   
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••	  
+Important methods of Java 8 :
+	•filter(predicate)--> filter accepts a predicate interface which checks a condition and returns True/False accordingly .
+	•forEach(Consumer)--> it uses consumer interface which does operation over each element of the stream . 
+	•collect()
+	•map(mapper)
+
+
+ 
+@FunctionalInterface 
+public interface UPIPayment{
+ 
+ String doPayment(String source , String dest );
+
+}	
+
+Q. 	 Can we create Functional   Interface which  extends another functional interface ?
+Ans. • Suppose, we are trying to create a new functional interface by extending another functional .
+	 • Then , that interface wont be fucntional interface, since it will have more than 1 abstract method in that interface.
+	 • It will not even act as an Functional Interface . 
+    
+    
+	
+	
+	
+	
+Examples of Functional Interfce :
+	 Runnable , Callable , Comparator 
+	
+
+Streams for Array List 
+
+		list.stream().distinct().collect(Collectors.toList())
+		List.stream.map().filter().distinct().sorted().filter().forEach();	
+		
+Streams for Arrays :		
+		Streams on Arrays can help in finding maximum and minimum . 
+
+
+
+Use of Map - 
+When we have to fetch a single field , or when there is a one --> one mapping of a field for  a object.	
+Example :  Name field of all the employees 
+
+Use of Flat Map - 
+When we have to fetch a single field , but  there is a one --> many mapping of a field for  a object.
+Example :  PhoneNumber field --which can have more than 1 phone numbers
+								or
+		   Email ID: 						
+	
+
+
+Question:
+1. Wap to find the highest salary within a department ?
+2. WAP to find the highest paid employee from all the departments using Streams?
+ 
+
+
+public class Employee {
+	int id ; 
+	String Name;
+	String Dept;
+	int salary ;
+	public Employee(int id, String name, String dept, int salary) {
+		super();
+		this.id = id;
+		Name = name;
+		Dept = dept;
+		this.salary = salary;
+	}	
+
+
+
+
+}
+
+
+
+
+
+
+Important Questions : 
+
+
+What are terminal and Intermediate operations?
+
+How to find the maximum salaried employee?  
+How to get the second or third  highest salaried  employee ?
+How to get list of employees of a specific  department ?
+How to get the average salary   of a specific department?
+How to find the name of highest salaried employee in a department ? 
+
+
+
+How to get the maximum salary from each department ?
+
+
+
+
+
