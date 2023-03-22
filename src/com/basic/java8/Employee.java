@@ -63,7 +63,8 @@ public static void main(String[] args) {
 			  								 new Employee(3,"Shrey", "QA", 7001),
 			  								 new Employee(4,"Shreyansh", "QA", 4500),
 			  								 new Employee(5,"Naveen", "PM", 10000),
-			  								 new Employee(6,"Samiksha", "DEVOPS", 9000))
+			  								 new Employee(6,"Samiksha", "DEVOPS", 9000),
+											 new Employee(7,"Pavan", "SM", 9000))
 			 			             .collect(Collectors.toList());
 	 // Group employees by Department 
 	 Map<String, List<Employee>>  employeeMap = employees.stream().collect(Collectors.groupingBy(Employee::getDept));
