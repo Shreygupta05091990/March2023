@@ -59,7 +59,7 @@ public static void main(String[] args) {
 	  int n = scn.nextInt();
 	  
 	 List<Employee>  employees  =  Stream.of(new Employee(1,"Basant", "QA", 6000),
-			  								 new Employee(2,"Saksham", "DEV", 7000),
+			  								 new Employee(2,"Saksham", "EL", 7000),
 			  								 new Employee(3,"Shrey", "QA", 7001),
 			  								 new Employee(4,"Shreyansh", "QA", 4500),
 			  								 new Employee(5,"Naveen", "PM", 10000),
