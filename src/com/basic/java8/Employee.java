@@ -62,7 +62,7 @@ public static void main(String[] args) {
 			  								 new Employee(2,"Saksham", "DEV", 7000),
 			  								 new Employee(3,"Shrey", "QA", 7001),
 			  								 new Employee(4,"Shreyansh", "QA", 4500),
-			  								 new Employee(5,"Naveen", "QA", 10000),
+			  								 new Employee(5,"Naveen", "PM", 10000),
 			  								 new Employee(6,"Samiksha", "DEVOPS", 9000))
 			 			             .collect(Collectors.toList());
 	 // Group employees by Department 
